@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'ttt.dart';
+
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -16,8 +18,8 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ListView(
           children: <Widget>[
             UserAccountsDrawerHeader(
-              accountName: Text("Rob"),
-              accountEmail: Text("rdrwood@gmail.com"),
+              accountName: Text("Made by Robert Wood Jr."),
+              accountEmail: Text( "rdrwood@gmail.com"),
               currentAccountPicture: CircleAvatar(
                 backgroundColor: Colors.red,
                 child: Text('RW'),
@@ -28,12 +30,12 @@ class _MyHomePageState extends State<MyHomePage> {
               trailing: Icon(Icons.home),
             ),
             ListTile(
-              title: Text("Cars"),
+              title: Text("Tic Tac Toe"),
               trailing: Icon(Icons.train),
-              onTap: () => Navigator.of(context).pushNamed("/cars"),
+              onTap: () => Navigator.of(context).pushNamed("/ttt"),
             ),
             ListTile(
-              title: Text("Test"),
+              title: Text("Random Scratch"),
               trailing: Icon(Icons.mobile_screen_share),
               onTap: () => Navigator.of(context).pushNamed("/cars"),
             ),
